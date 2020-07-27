@@ -108,5 +108,12 @@ body {
   .icon{
     display:none
   }
+  .navbar{
+    height: 60px;
+  }
+  .text{
+    float:left;
+  }
+  
 }
 </style>
