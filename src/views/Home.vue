@@ -69,7 +69,7 @@
       </div>
     </div>
 
-    <!----products ---------->
+    <!----section3 ---------->
     <div class="container mt-5 p3 mb-5">
       <div class="col-md-12">
         <h1>
@@ -122,6 +122,182 @@
 </hooper>
       </div>
     </div>
+
+    <!------------section 4  ------------>
+    <div class="signUp mt-5 mb-5  ">
+      
+        <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-7">
+                <h3 class="coverText">
+                  Sign up for discount up to 55% OFF
+                </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam.</p>
+             <button type="button" class="btn  coverBtn">Sign Up</button>
+             
+              </div>
+            </div>
+       </div>
+         
+        
+     
+     
+    </div>
+
+    <!----- section 5--------------------->
+    <div class="container-fluid mb-5">
+      <div class="row customerTitle">
+        <div class="col-md-6">
+          
+          <h1>Happy <span class="textColor"> Customers</span></h1>
+           <svg height="50">
+          <line x1="0" y1="0" x2="70" y2="0" style="stroke:#75b239;stroke-width:10" />
+        </svg>
+          <hooper :itemsToShow="1" :centerMode="true"  >
+          <slide >
+            <div class="col-md-12 mb-2">
+                  <img class="customerPic" src="../assets/pic5.jpg">
+            </div>
+         
+           <div class="col-md-10">
+             <p>
+               “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
+                  obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
+                  unde.”
+             </p>
+              <p class="textColor">— Rebecca Morando</p>
+           </div>
+          
+          </slide>
+           <slide >
+            <div class="col-md-12 mb-2">
+                  <img class="customerPic" src="../assets/pic6.jpg">
+            </div>
+         
+           <div class="col-md-10">
+             <p>
+               “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
+                  obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
+                  unde.”
+             </p>
+              <p class="textColor">—Andrew Neel</p>
+           </div>
+          
+          </slide>
+          <slide >
+            <div class="col-md-12 mb-2">
+                  <img class="customerPic" src="../assets/pic7.jpg">
+            </div>
+         
+           <div class="col-md-10">
+             <p>
+               “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
+                  obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
+                  unde.”
+             </p>
+              <p class="textColor">—Mai Neel</p>
+           </div>
+          
+          </slide>
+        
+          
+      <hooper-pagination slot="hooper-addons"></hooper-pagination>
+    
+        </hooper>
+
+        </div>
+        <div class="col-md-6">
+          <h1>Why <span class="textColor"> Us</span></h1>
+          <svg height="50">
+            <line x1="0" y1="0" x2="70" y2="0" style="stroke:#75b239;stroke-width:10" />  
+        </svg>
+        <div class="row mb-2">
+          <div class="col-md-2">
+            <div class="dot">
+              <p class="dotNum">1</p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
+            </p>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-2">
+            <div class="dot">
+              <p class="dotNum">2</p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="dot">
+              <p class="dotNum">3</p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-------Footer ------->
+    <footer class="foter">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 mt-5 ">
+          <h3>About <span class="textColor"> Pharmative</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
+        </div>
+        <div class="col-md-3 offset-md-1 mt-5 ">
+          <h3 class="textColor">Navigation</h3>
+          <ul>
+            <li>Supplements</li>
+            <li>Vitamins</li>
+            <li>Diet & Nutrition</li>
+            <li>Tea & Coffee</li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 offset-md-1 mt-5 ">
+           <h3 class="textColor">Contact Info</h3>
+            <ul>
+            <li>
+              <span>
+                <i class=" mr-2 fas fa-map-marker-alt"></i>
+              </span>
+              203 Fake St. Mountain View, San Francisco, California, USA</li>
+            <li>
+              <span>
+                <i class=" mr-2 fas fa-phone-alt"></i>
+              </span>
+              +2 392 3929 210</li>
+            <li>
+              <span><i class=" mr-2 fas fa-envelope"></i></span>
+              emailaddress@domain.com</li>
+            
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-md-12 text-center mt-5">
+      <p> Copyright © 2020 All rights reserved | This template is made with Love by RahmaGamal </p>
+      </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -192,7 +368,8 @@ export default {
   color: #75b239 ;
 }
 .pic{
-   min-height: 600px;
+   min-height: 500px;
+   background-size: cover;
 }
 /*** section 2 */
 .box{
@@ -229,6 +406,74 @@ export default {
     padding: 11%;
     margin-right: 2%;
 }
+
+/*section 4 *****************/
+
+
+.signUp{
+  width: 100%;
+  height: 300px;
+  /* background-image: url("../assets/pic3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #75b239;
+  color: white;
+}
+.coverText{
+ margin-top: 15%;
+}
+.coverBtn{
+      font-size: 21px;
+    background-color: #f5eeee08;
+    border-color: white;
+    color: #ffffff;
+}
+.coverBtn:hover{
+  color: #75b239 !important;
+    background-color: white !important;
+}
+
+
+/* section 5 */
+
+.customerTitle{
+  text-align: left;
+}
+.customerPic{
+
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.dot{
+  height: 80px;
+  width: 80px;
+  background-color: #75b239;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.dotNum{
+  position: absolute;
+  top: 27%;
+    left: 40%;
+    font-size: 26px;
+  color: white;
+}
+
+/*footer  */
+.foter{
+  background-color: #f8f9fa ;
+  text-align:left;
+}
+.foter ul{
+  list-style: none;
+  font-size: 20px;
+}
+.foter i{
+  font-size: 26px;
+  color: #75b239;
+}
 @media screen and (max-width:763px) {
   .contentt
 {
@@ -244,5 +489,8 @@ export default {
 .subTitle{
 font-size: 18px;
 }
+}
+.hooper-indicator.is-active {
+    background-color: #75b239 !important;
 }
 </style>
