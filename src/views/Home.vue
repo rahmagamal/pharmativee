@@ -24,7 +24,7 @@
            </div>
           </slide>
            <slide class="background">
-            <img class="pic" width="100%" src="../assets/pic4.jpg">
+            <img class="pic" width="100%" src="../assets/pic8.jpg">
            
              <div class="contentt">
                <h1 class="title "> New Medicine <strong class="textColor">Everday</strong> </h1>
@@ -85,35 +85,35 @@
        <hooper :itemsToShow="3" :infiniteScroll="true" :autoPlay="true">
           <slide>
             <div class="product">
-                   <img height="400px" width="70%" src="../assets/product1.png">
+                   <img class="productimg" src="../assets/product1.png">
                    <h3>Umcka Cold Care</h3>
                    <p>12.00$</p>
             </div>
           </slide>
            <slide>
             <div class="product">
-                   <img height="400px" width="70%" src="../assets/product3.jpg">
+                   <img class="productimg" src="../assets/product3.jpg">
                     <h3>Get Clear Skin</h3>
                    <p>25.00$</p>
             </div>
           </slide>
            <slide>
             <div class="product">
-                   <img height="400px" width="70%" src="../assets/product4.jpg">
+                   <img class="productimg" src="../assets/product4.jpg">
                     <h3>Get Clear Skin</h3>
                    <p>25.00$</p>
             </div>
           </slide>
            <slide>
             <div class="product">
-                   <img height="400px" width="70%" src="../assets/product5.jpg">
+                   <img class="productimg" src="../assets/product5.jpg">
                     <h3>Get Clear Skin</h3>
                    <p>25.00$</p>
             </div>
           </slide>
            <slide>
             <div class="product">
-                   <img height="400px" width="70%" src="../assets/product6.jpg">
+                   <img class="productimg" src="../assets/product6.jpg">
                     <h3>Umcka Cold Care</h3>
                    <p>12.00$</p>
             </div>
@@ -153,7 +153,7 @@
            <svg height="50">
           <line x1="0" y1="0" x2="70" y2="0" style="stroke:#75b239;stroke-width:10" />
         </svg>
-          <hooper :itemsToShow="1" :centerMode="true"  >
+          <hooper :itemsToShow="1" :centerMode="true" :autoPlay="true" >
           <slide >
             <div class="col-md-12 mb-2">
                   <img class="customerPic" src="../assets/pic5.jpg">
@@ -257,13 +257,16 @@
       <div class="container-fluid">
       <div class="row">
         <div class="col-md-3 mt-5 ">
+          <ul>
           <h3>About <span class="textColor"> Pharmative</span></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
              Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
+      </ul>
         </div>
         <div class="col-md-3 offset-md-1 mt-5 ">
-          <h3 class="textColor">Navigation</h3>
+          
           <ul>
+            <h3 class="textColor">Navigation</h3>
             <li>Supplements</li>
             <li>Vitamins</li>
             <li>Diet & Nutrition</li>
@@ -272,21 +275,22 @@
           </ul>
         </div>
         <div class="col-md-3 offset-md-1 mt-5 ">
-           <h3 class="textColor">Contact Info</h3>
+           
             <ul>
-            <li>
+              <h3 class="textColor">Contact Info</h3>
+            <li class="mb-2">
               <span>
                 <i class=" mr-2 fas fa-map-marker-alt"></i>
               </span>
-              203 Fake St. Mountain View, San Francisco, California, USA</li>
-            <li>
+              Cairo,Egypt</li>
+            <li class="mb-2">
               <span>
                 <i class=" mr-2 fas fa-phone-alt"></i>
               </span>
-              +2 392 3929 210</li>
-            <li>
+              0105669732</li>
+            <li class="mb-2">
               <span><i class=" mr-2 fas fa-envelope"></i></span>
-              emailaddress@domain.com</li>
+              pharmative@gmail.com</li>
             
 
           </ul>
@@ -294,7 +298,7 @@
 
       </div>
       <div class="col-md-12 text-center mt-5">
-      <p> Copyright © 2020 All rights reserved | This template is made with Love by RahmaGamal </p>
+      <p> Copyright © 2020 All rights reserved |  made with Love by RahmaGamal </p>
       </div>
       </div>
     </footer>
@@ -368,8 +372,9 @@ export default {
   color: #75b239 ;
 }
 .pic{
-   min-height: 500px;
+   /* min-height: 500px !important; */
    background-size: cover;
+   height: 93vh;
 }
 /*** section 2 */
 .box{
@@ -405,6 +410,11 @@ export default {
     border-radius: 10px;
     padding: 11%;
     margin-right: 2%;
+    
+}
+.productimg{
+  height: 400px;
+  width: 70%;
 }
 
 /*section 4 *****************/
@@ -463,7 +473,7 @@ export default {
 
 /*footer  */
 .foter{
-  background-color: #f8f9fa ;
+  background-color: #f5f6f7 ;
   text-align:left;
 }
 .foter ul{
@@ -481,6 +491,13 @@ export default {
     top: 24% !important;
     left: 0% !important;
   
+}
+.product{
+  height: 300px;
+}
+.productimg{
+  height: 55%;
+ 
 }
 .pic{
   min-height: 600px;

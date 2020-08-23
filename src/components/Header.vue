@@ -1,14 +1,19 @@
 <template>
   <div>
+    
       <nav class="navbar">
          <div class="container">
              <div class="row content">
                    
                  <div class="col-md-3">
                    <span class="text">PHARMA<span class="text2">TIVE</span> </span>
-
+                   <!--- responsive menu --->
+              
+                   
+                      <i class="fas fa-bars  menu"></i>
                  </div>
                  <div class="col-md-6">
+                   
                      <ul >
                          <li class="list "> <a href="#" class="textcolor"> Home  </a>
                          </li>
@@ -30,7 +35,7 @@
                       <svg height="10" width="20">
                         <circle cx="30" cy="30" r="10" stroke="#75b239" stroke-width="3" fill="#75b239" />
                       </svg>
-
+                   
                  </div>
              </div>
 
@@ -62,7 +67,7 @@ body {
     top:0;
     z-index:9999;
     padding: 2%;
-    box-shadow: 5px 10px #ffff;
+    box-shadow: 0px 10px #f9f9f9;
 }
 .content{
   width: 100% !important ;
@@ -101,6 +106,9 @@ body {
 .textfont{
   font-size: 20px;
 }
+.menu{
+  display: none;
+}
 @media only screen and (max-width:763px){
   .list a{
     display:none
@@ -112,8 +120,21 @@ body {
     height: 60px;
   }
   .text{
+    display: block;
     float:left;
+    font-size: 23px;
   }
+  .text2{
+  
+    font-size: 23px;
+  }
+  .menu{
+  display: unset;
+  float: right;
+  font-size: 23px;
+  margin-top: 5px;
+  color: #75b239;
+}
   
 }
 </style>
