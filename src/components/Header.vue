@@ -9,9 +9,23 @@
                    <span class="text">PHARMA<span class="text2">TIVE</span> </span>
                    <!--- responsive menu --->
               
-                   
-                      <i class="fas fa-bars  menu"></i>
+                       <i class="fas fa-bars  menu " id="menu" @click="clickMenu()"></i>
+                      
                  </div>
+                  <div v-if="mobile" class="mobileMenu">
+                       <ul class=" ">
+                         <li class="menuList" @click="clickMenu" > <a href="#home" >HOME  </a>
+                         </li>
+                          
+                         <li class="menuList" @click="clickMenu" > <a href="#about"> About </a></li>
+                         <li class="menuList" @click="clickMenu" > <a href="#products"> Products </a></li>
+                         <li class="menuList" @click="clickMenu" > <a href="#whyUs"> WHY US </a></li>
+                         
+                         <!-- <li class="menuList" @click="clickMenu" > <a href="#contact"> CONTACT US</a></li> -->
+
+
+                     </ul>
+                      </div>
                  <div class="col-md-6">
                    
                      <ul >
@@ -20,10 +34,10 @@
                           <!-- <svg height="1" width="20">
                             <line x1="0" y1="0" x2="50" y2="0" style="stroke:#75b239;stroke-width:2" />
                           </svg> -->
-                         <li class="list"> <a href="#"> Store </a></li>
-                         <li class="list"> <a href="#"> Products </a></li>
-                         <li class="list"> <a href="#"> About </a></li>
-                         <li class="list"> <a href="#"> Contact </a></li>
+                         <li class="list"> <a href="#about"> About </a></li>
+                         <li class="list"> <a href="#products"> Products </a></li>
+                         <li class="list"> <a href="#whyUs"> Why Us </a></li>
+                         <!-- <li class="list"> <a href="#contact"> Contact </a></li> -->
 
                      </ul>
                     
@@ -44,11 +58,22 @@
          </div>
       
       </nav>
+      
   </div>
 </template>
 
 <script>
 export default {
+   data(){
+      return{
+         mobile:false
+      }
+  },
+        methods:{
+      clickMenu(){
+          this.mobile=!this.mobile
+      }
+  }
 
 }
 </script>
@@ -63,7 +88,7 @@ body {
     width: 100%;
     height: 80px;
     background-color:white;
-    position: absolute;
+    position: fixed;
     top:0;
     z-index:9999;
     padding: 2%;
@@ -107,8 +132,30 @@ body {
   font-size: 20px;
 }
 .menu{
-  display: none;
+  display: none !important;
 }
+.mobileMenu{
+     display: unset;
+    margin-left: 34px;
+    background-color: #f5f5f5;
+    opacity: 0.7;
+    width: 100%;
+    line-height: 3.2;
+    margin-top: 9%;
+}
+ .mobileMenu   li{
+    
+      list-style-type: none;
+      
+    }
+    .mobileMenu a{
+      color: #75b239 !important;
+    }
+  .mobileMenu  .menuList{
+      margin-left: -20%;
+      
+    }
+
 @media only screen and (max-width:763px){
   .list a{
     display:none
@@ -129,11 +176,11 @@ body {
     font-size: 23px;
   }
   .menu{
-  display: unset;
+  display: unset !important;
   float: right;
   font-size: 23px;
   margin-top: 5px;
-  color: #75b239;
+  color: #75b239 !important;
 }
   
 }

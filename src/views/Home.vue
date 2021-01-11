@@ -2,7 +2,7 @@
   <div class="pharmative">
     <Header />
       <!------------section 1------------->
-    <div>
+    <div id="home">
     
      <hooper :itemsToShow="1" :centerMode="true"  :autoPlay="true">
           <slide class="background">
@@ -38,7 +38,7 @@
 
     </div>
     <!---------section 2------------->
-    <div class="container mt-5">
+    <div class="container mt-5" id="about">
       <div class="row">
         <div class="col-md-4 box mb-3">
             <i class="fas fa-truck-loading mb-3"></i>
@@ -70,7 +70,7 @@
     </div>
 
     <!----section3 ---------->
-    <div class="container mt-5 p3 mb-5">
+    <div class="container mt-5 p3 mb-5" id="products">
       <div class="col-md-12">
         <h1>
           Pharmacy <span class="textcolor">Products</span>
@@ -145,7 +145,7 @@
     </div>
 
     <!----- section 5--------------------->
-    <div class="container-fluid mb-5">
+    <div class="container-fluid mb-5" id="whyUs">
       <div class="row customerTitle">
         <div class="col-md-6">
           
